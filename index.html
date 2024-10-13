@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Layout</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="flex-container">
+        <div class="makeMeStack" style="flex-grow: 1">seccond</div>
+        <div class="makeMeStack" style="flex-grow: 1">style</div>
+        <div class="makeMeStack" style="flex-grow: 1">of</div>
+        <div class="makeMeStack" style="flex-grow: 1">flex box</div>
+    </div>
+    <div class="accordion">
+        <h3 class="accordion-header">click here </h3>
+        <div class="accordion-content">
+            <p>This is.</p>
+        </div>
+        <h3 class="accordion-header">oh and here</h3>
+        <div class="accordion-content">
+            <p>my.</p>
+        </div>
+        <h3 class="accordion-header">maybe click here also </h3>
+        <div class="accordion-content">
+            <p>acordion.</p>
+        </div>
+    
+        <div class="container">
+        <div class="item">forgive</div>
+        <div class="item">never forget</div>
+        <div class="item">healing</div>
+        <div class="item">change</div>
+    </div>
+    <div id="draggable" class="ui-widget-content">
+        Drag this copyright antwhere you want  🤪 copyright Daniel Hernandez 
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script>
+        $(function() {
+            $("#draggable").draggable();
+        });
+    </script>
+
+
+<script>
+    $(document).ready(function() {
+        $(".accordion-header").click(function() {
+            $(this).next(".accordion-content").slideToggle();
+            $(".accordion-content").not($(this).next()).slideUp();
+        });
+    });
+</script>
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,135 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; 
+    margin-bottom: 20px;
+}
+
+.item {
+    background-color: #cd2d98;
+    color: white;
+    padding: 20px;
+    margin: 10px;
+    flex: 1 1 100px;
+    text-align: center;
+}
+
+
+/* below is the media i did a diffrent max width instead doing min width just to do things diffrent */
+
+@media (min-width: 600px) { 
+    .item {
+        flex: 1 1 calc(33.333% - 20px);
+    }
+}
+
+.navbar {
+    background-color: #a83086; 
+    overflow: hidden;
+}
+
+.navbar ul {
+    list-style-type: none; 
+    margin: 0; 
+}
+
+.navbar li {
+    float: left;
+}
+
+.navbar a {
+    display: block; 
+    color: rgb(255, 255, 255); 
+    text-align: center; 
+    padding: 14px 16px; 
+    text-decoration: none; 
+}
+
+.navbar a:hover {
+    background-color: hsl(314, 100%, 69%); 
+    color: black; 
+}
+
+.flex-container {
+    display: flex;
+    margin: 20px 0; 
+}
+
+.makeMeStack {
+    background-color: #db54c7;
+    border: 1px solid #ccc; 
+    padding: 20px; 
+    text-align: center; 
+}
+
+.accordion {
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    margin: 20px 0; 
+}
+
+.accordion-header {
+    background-color: #f2f2f2; 
+    cursor: pointer; 
+    padding: 10px; 
+    border-bottom: 1px solid #ccc; 
+    font-weight: bold; 
+}
+
+.accordion-content {
+    display: none; 
+    padding: 10px; 
+    border-top: 1px solid #ccc; }
+
+.accordion {
+    border: 1px solid #ff66b2; 
+    border-radius: 5px; 
+    margin: 20px 0; 
+    background-color: #ffe6f2; 
+}
+
+.accordion-header {
+    background-color: #ff80c1; 
+    cursor: pointer; 
+    padding: 10px; 
+    border-bottom: 1px solid #ff66b2; 
+    font-weight: bold; 
+    color: white; 
+    transition: background-color 0.3s;
+}
+
+.accordion-header:hover {
+    background-color: #ff4d94; 
+}
+
+.accordion-content {
+    display: none; 
+    padding: 10px; 
+    border-top: 1px solid #ff66b2; 
+    background-color: rgb(246, 185, 227);
+    color: #333; 
+}
+.container {
+    display: flex;              
+    flex-direction: column;     
+    align-items: center;    
+    margin: 20px;           
+}
+
+.item {
+    background-color: #e453bd; 
+    border: 1px solid #ccc;   
+    padding: 20px;            
+    margin: 10px;              
+    text-align: center;       
+    width: 80%;              }
